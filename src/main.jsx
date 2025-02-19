@@ -8,7 +8,9 @@ import ShoppingCartProvider  from './context'
 import { BrowserRouter } from 'react-router-dom'
 
 createRoot(document.getElementById('root')).render(
-    <BrowserRouter><ShoppingCartProvider><App /></ShoppingCartProvider></BrowserRouter>
+    <BrowserRouter future={{
+        v7_startTransition: true,
+      }}><ShoppingCartProvider><App /></ShoppingCartProvider></BrowserRouter>
  
   
   
